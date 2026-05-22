@@ -22,7 +22,7 @@
             <label>Email</label>
             <input type="text" formControlName="email"
                 [ngClass]="{'input-error': formulario.get('email')?.invalid && formulario.get('email')?.touched,
-            'input-valid': formulario.get('nombre')?.valid && formulario.get('nombre')?.touched
+            'input-valid': formulario.get('email')?.valid && formulario.get('email')?.touched
         }">
             <div *ngIf="formulario.get('email')?.invalid && formulario.get('email')?.touched" class="error-container">
                 <p *ngFor="let error of erroresEmail" class="error-content">
